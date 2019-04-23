@@ -11,8 +11,8 @@ namespace nbiot {
     }
     let lines: string[] = []
     let socket = -1
-    let serverIp = "172.16.15.14"
-    let serverPort = 1234
+    let serverIp = "188.166.45.215"
+    let serverPort = 41234
     let awaitingResponse = false
     let _isConnected = false
     const connectCallbacks: (() => void)[] = []
@@ -224,7 +224,7 @@ namespace nbiot {
     //% advanced=true
     export function onReceivedBytes(callback: (bytes: number[]) => void): void {
         onReceivedBuffer((buffer: Buffer) => {
-            let bytes:NumberFormat.UInt8LE[] = []
+            let bytes: NumberFormat.UInt8LE[] = []
             for (let i = 0; i < buffer.length; i++) {
                 bytes.push(buffer.getNumber(NumberFormat.UInt8LE, i))
             }
