@@ -1,7 +1,7 @@
 /**
  * NB-IoT blocks
  */
-//% weight=100 color=#1eadf8 icon="\uf1d8" block="NB-IoT"
+//% weight=100 color=#cc0099 icon="\uf1d8" block="NB-IoT"
 namespace nbiot {
     const DEBUG = false
     const enum NbiotEvents {
